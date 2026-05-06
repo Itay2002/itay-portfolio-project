@@ -1,0 +1,20 @@
+---
+import { Compass, MessageCircle } from "@lucide/astro";
+import { pages } from "@/content/siteContent";
+---
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="brand-link" href="/" aria-label="Itay OS home">
+      <Compass aria-hidden="true" />
+      <span>Itay OS</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      {pages.slice(0, 6).map((page) => <a href={`/${page.slug}`}>{page.title}</a>)}
+    </nav>
+    <a class="mobile-link" href="/find-me-online">online</a>
+    <a class="icon-link" href="/lets-talk" aria-label="let's talk">
+      <MessageCircle aria-hidden="true" />
+    </a>
+  </div>
+</header>
