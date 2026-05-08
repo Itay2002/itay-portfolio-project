@@ -4,20 +4,26 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
     "test": "vitest run",
-    "check": "astro check"
+    "check": "tsc --noEmit"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/vercel": "^8.2.2",
-    "@lucide/astro": "^1.14.0",
-    "astro": "^5.13.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "typescript": "^5.7.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "jsdom": "^25.0.1",
+    "vite": "^6.0.7",
     "vitest": "^2.1.8"
   }
 }

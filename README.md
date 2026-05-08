@@ -1,14 +1,14 @@
-# Itay Gozalzani Portfolio
+# Itay Gozalzani Personality Brand
 
-A cinematic dark mode Astro portfolio for Itay Gozalzani: software developer, storyteller, community builder.
+A calm, modern React personal website for Itay Gozalzani: software developer, storyteller, and community builder.
 
 ## Stack
 
-- Astro
+- React.js with Vite
 - Vercel static deployment
 - Supabase-ready later, when backend context is available
 
-Astro static sites deploy to Vercel with zero configuration, and this project also includes `vercel.json` plus the Vercel Astro adapter so the deployment shape is explicit.
+The site is structured with reusable React components and simple data files so interviews, writing, awards, poems, and social links can grow over time.
 
 ## Local Development
 
@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:4321`.
+Open the local URL printed by Vite, usually `http://127.0.0.1:5173`.
 
 ## Quality Checks
 
@@ -28,12 +28,10 @@ npm run build
 
 ## Site Map
 
-- `/` - Personality Brand Operating System homepage
-- `/life` - life in a nutshell
-- `/strangers-i-interviewed` - strangers I interviewed
-- `/famous-humans` - famous humans
-- `/experiments` - experiments
-- `/outside-the-9-5` - outside the 9-5
-- `/brain-dump` - brain dump
-- `/find-me-online` - find me online
-- `/lets-talk` - let's talk
+- Start Here
+- My Life
+- My Interviews
+- My Awards
+- My Brain
+- Poems
+- Social Links
